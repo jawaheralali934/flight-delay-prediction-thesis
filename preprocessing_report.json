@@ -1,0 +1,35 @@
+{
+  "raw_n": 162049,
+  "n_dropped_missing_delay_fields": 1301,
+  "n_outliers_capped": 811,
+  "n_final": 160748,
+  "class_balance": {
+    "0": 0.8491489785253938,
+    "1": 0.15085102147460622
+  },
+  "weather_missing_before_fill": {
+    "temp": 945,
+    "wind_speed": 984,
+    "wind_gust": 984,
+    "precip": 912,
+    "visib": 918
+  },
+  "missing_report_raw": {
+    "year": 0,
+    "month": 0,
+    "day": 0,
+    "dep_time": 857,
+    "dep_delay": 857,
+    "arr_time": 988,
+    "arr_delay": 1301,
+    "carrier": 0,
+    "tailnum": 248,
+    "flight": 0,
+    "origin": 0,
+    "dest": 0,
+    "air_time": 1301,
+    "distance": 0,
+    "hour": 857,
+    "minute": 857
+  }
+}

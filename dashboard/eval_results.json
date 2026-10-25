@@ -1,0 +1,187 @@
+{
+  "functional_test_cases": [
+    {
+      "input": {
+        "month": 12,
+        "day": 20,
+        "hour": 17,
+        "distance": 954,
+        "prev_arr_delay": 45,
+        "is_weekend": 0,
+        "temp": 38,
+        "wind_speed": 18,
+        "wind_gust": 25,
+        "precip": 0.1,
+        "visib": 6,
+        "carrier": "AS",
+        "origin": "SEA"
+      },
+      "output": {
+        "delay_probability": 0.34822511672973633,
+        "risk_tier": "Amber",
+        "top_factors": [
+          {
+            "feature": "prev_arr_delay",
+            "shap_value": 0.4955163896083832
+          },
+          {
+            "feature": "month",
+            "shap_value": -0.3544420599937439
+          },
+          {
+            "feature": "day",
+            "shap_value": -0.2787417769432068
+          },
+          {
+            "feature": "temp",
+            "shap_value": -0.26059263944625854
+          },
+          {
+            "feature": "hour",
+            "shap_value": 0.25679847598075867
+          }
+        ],
+        "latency_ms": 11.434316635131836
+      }
+    },
+    {
+      "input": {
+        "month": 7,
+        "day": 4,
+        "hour": 8,
+        "distance": 150,
+        "prev_arr_delay": 0,
+        "is_weekend": 1,
+        "temp": 75,
+        "wind_speed": 5,
+        "wind_gust": 7,
+        "precip": 0.0,
+        "visib": 10,
+        "carrier": "WN",
+        "origin": "PDX"
+      },
+      "output": {
+        "delay_probability": 0.22869081795215607,
+        "risk_tier": "Green",
+        "top_factors": [
+          {
+            "feature": "hour",
+            "shap_value": -0.5222795605659485
+          },
+          {
+            "feature": "distance",
+            "shap_value": -0.3926296830177307
+          },
+          {
+            "feature": "day",
+            "shap_value": -0.13107988238334656
+          },
+          {
+            "feature": "month",
+            "shap_value": -0.11485515534877777
+          },
+          {
+            "feature": "is_weekend",
+            "shap_value": -0.10682647675275803
+          }
+        ],
+        "latency_ms": 7.719755172729492
+      }
+    },
+    {
+      "input": {
+        "month": 1,
+        "day": 15,
+        "hour": 22,
+        "distance": 2400,
+        "prev_arr_delay": 90,
+        "is_weekend": 0,
+        "temp": 25,
+        "wind_speed": 30,
+        "wind_gust": 40,
+        "precip": 0.5,
+        "visib": 2,
+        "carrier": "UA",
+        "origin": "SEA"
+      },
+      "output": {
+        "delay_probability": 0.5425525307655334,
+        "risk_tier": "Amber",
+        "top_factors": [
+          {
+            "feature": "wind_speed",
+            "shap_value": 0.31136807799339294
+          },
+          {
+            "feature": "month",
+            "shap_value": -0.24359853565692902
+          },
+          {
+            "feature": "carrier_WN",
+            "shap_value": -0.21802209317684174
+          },
+          {
+            "feature": "prev_arr_delay",
+            "shap_value": 0.18357160687446594
+          },
+          {
+            "feature": "temp",
+            "shap_value": 0.17741017043590546
+          }
+        ],
+        "latency_ms": 6.730079650878906
+      }
+    },
+    {
+      "input": {
+        "month": 3,
+        "day": 10,
+        "hour": 6,
+        "distance": 600,
+        "prev_arr_delay": -5,
+        "is_weekend": 0,
+        "temp": 55,
+        "wind_speed": 8,
+        "wind_gust": 10,
+        "precip": 0.0,
+        "visib": 10,
+        "carrier": "DL",
+        "origin": "PDX"
+      },
+      "output": {
+        "delay_probability": 0.061975494027137756,
+        "risk_tier": "Green",
+        "top_factors": [
+          {
+            "feature": "hour",
+            "shap_value": -1.5057549476623535
+          },
+          {
+            "feature": "distance",
+            "shap_value": -0.5748111605644226
+          },
+          {
+            "feature": "carrier_DL",
+            "shap_value": -0.326953262090683
+          },
+          {
+            "feature": "prev_arr_delay",
+            "shap_value": -0.14413116872310638
+          },
+          {
+            "feature": "origin_PDX",
+            "shap_value": -0.06870735436677933
+          }
+        ],
+        "latency_ms": 6.731271743774414
+      }
+    }
+  ],
+  "load_test": {
+    "n_requests": 200,
+    "mean_latency_ms": 8.24273943901062,
+    "p50_latency_ms": 8.170604705810547,
+    "p95_latency_ms": 9.196758270263672,
+    "max_latency_ms": 9.640693664550781
+  }
+}

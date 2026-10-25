@@ -1,0 +1,16 @@
+{
+  "month": "Calendar month of scheduled departure (1-12)",
+  "day": "Day of month of scheduled departure",
+  "hour": "Scheduled departure hour (0-23, local)",
+  "distance": "Great-circle distance, origin to destination (miles)",
+  "prev_arr_delay": "Arrival delay (minutes) of this tail number's immediately preceding flight -- network/cascade feature",
+  "is_weekend": "Binary flag, 1 if scheduled departure date falls on Saturday/Sunday",
+  "temp": "Origin airport temperature at scheduled departure hour (degrees F)",
+  "wind_speed": "Origin airport wind speed at scheduled departure hour (mph)",
+  "wind_gust": "Origin airport wind gust speed at scheduled departure hour (mph)",
+  "precip": "Origin airport precipitation at scheduled departure hour (inches)",
+  "visib": "Origin airport visibility at scheduled departure hour (miles)",
+  "carrier_*": "One-hot indicator for operating carrier (11 carriers)",
+  "origin_*": "One-hot indicator for origin airport (SEA, PDX)",
+  "delayed (target)": "Binary target: 1 if arrival delay > 15 minutes, else 0"
+}

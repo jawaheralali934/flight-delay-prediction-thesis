@@ -1,0 +1,13 @@
+{
+  "n_sequences_total_available": 18000,
+  "n_sequences_used_train": 14400,
+  "n_sequences_used_test": 3600,
+  "sequence_length": 5,
+  "hidden_dim": 12,
+  "epochs": 10,
+  "F1_macro": 0.47284455850731777,
+  "AUC_ROC": 0.5880720299920104,
+  "Precision": 0.4375,
+  "Recall": 0.013207547169811321,
+  "Brier": 0.15860832969433797
+}

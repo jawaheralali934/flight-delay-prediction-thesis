@@ -1,0 +1,9 @@
+{
+  "baseline_F1_macro": 0.47284455850731777,
+  "importance_drop": {
+    "dep_delay": -0.020560525805405794,
+    "arr_delay": -0.0024934434227727453,
+    "is_weekend": 0.0,
+    "distance": 0.0059453621220979525
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "cv_check": {
+    "cv_unweighted_200trees_F1macro_mean": 0.5646,
+    "cv_unweighted_note": "configuration used in train_models.py (no class weighting)",
+    "cv_weighted_400trees_F1macro_mean": 0.6393018866533875,
+    "cv_weighted_std": 0.0021828264510988073,
+    "test_unweighted_200trees_F1macro": 0.5050656483941975
+  },
+  "regression": {
+    "Mean baseline": {
+      "RMSE": 32.11321792240055,
+      "MAE": 19.233921693944986,
+      "R2": -0.017177671228609137
+    },
+    "Ridge regression": {
+      "RMSE": 31.138907657487835,
+      "MAE": 18.7892192997172,
+      "R2": 0.043608049131576676
+    },
+    "Random Forest": {
+      "RMSE": 29.737276707224016,
+      "MAE": 18.136144163712043,
+      "R2": 0.1277689290900994
+    },
+    "XGBoost": {
+      "RMSE": 29.75815023940657,
+      "MAE": 18.652061100946494,
+      "R2": 0.12654400635208285
+    }
+  },
+  "regression_target": "arr_delay in minutes (winsorised at 99.5th pct, floored at -60); same chronological 75/15/10 split"
+}
